@@ -1,2 +1,2 @@
 #!/bin/bash
-./betty-doc.pl $CFILE
+gcc $CFILE>c
