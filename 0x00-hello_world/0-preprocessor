@@ -1,2 +1,2 @@
 #!/bin/bash
-echo $CFILE
+./betty-doc.pl $CFILE
