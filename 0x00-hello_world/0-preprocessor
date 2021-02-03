@@ -1,2 +1,2 @@
 #!/bin/bash
-./betty-style.pl $CFILE
+./betty-doc.pl $CFILE
