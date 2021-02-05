@@ -13,8 +13,8 @@
  */
 int main(void)
 {
-	int n = 26;
-	int nC = 26;
+	int n = 9;
+	int nC = 6;
 	char letter = 'a';
 	char letterC = 'A';
 
@@ -22,7 +22,7 @@ int main(void)
 	do {
 	putchar(letter);
 	letter++;
-	n--;
+	n++;
 	} while (n != 0);
 
 	do {
