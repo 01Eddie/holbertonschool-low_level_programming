@@ -18,18 +18,18 @@ int main(void)
 	char letter = 'a';
 	char letterC = 'A';
 
-        /* your code goes there */
+	/* your code goes there */
 	do {
 	putchar(letter);
 	letter++;
 	n--;
 	} while (n != 0);
-	
+
 	do {
-        putchar(letterC);
-        letterC++;
-        nC--;
-        } while (nC != 0);
+	putchar(letterC);
+	letterC++;
+	nC--;
+	} while (nC != 0);
 
 	putchar('\n');
 	return (0);
