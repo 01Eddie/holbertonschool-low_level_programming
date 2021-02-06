@@ -13,29 +13,23 @@
  */
 int main(void)
 {
-	int n = 0;
+	int digit1 = 0;
+	int digit2 = 0;
 
 	/* your code goes there */
-	do {
-
-	if (n < 10)
+	for (digit1 = 48; digit1 <= 57; digit1++)
 	{
-		putchar('0');
+		for (digit2 = 48; digit2 <= 57; digit2++)
+		{
+			putchar(digit1);
+			putchar(digit2);
+			if (digit1 != 57 || digit2 != 57)
+			{
+				putchar(',');
+				putchar(' ');
+			}
+		}
 	}
-
-	printf("%d", n);
-	n++;
-
-	if (n <= 99)
-	{
-		putchar(',');
-		putchar(' ');
-	}
-
-	} while (n != 100);
-
 	putchar('\n');
-
 	return (0);
 }
-
