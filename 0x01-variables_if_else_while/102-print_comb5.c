@@ -15,11 +15,12 @@ int main(void)
 	int digit2 = 0;
 	int digit3 = 0;
 	int digit4 = 0;
+	int x, y;
 
 	/* your code goes there */
-	for (int x = 0; x <= 99; x++)
+	for (x = 0; x <= 99; x++)
 	{
-		for (int y = 0; y <= 99; y++)
+		for (y = 0; y <= 99; y++)
 		{
 			digit1 = (x / 10);
 			digit2 = (x % 10);
