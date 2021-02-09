@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include <stdio.h>
 
 /**
  * main - Short description, single line
@@ -7,16 +7,13 @@
  * Description: Longer description of the function)?
 (* section header: Section description)*
  * Return: 0
-*/
+ */
+void print_alphabet(void){
+
+}
 
 int main(void)
 {
-	char holbie[] = "Holberton\n";
-	int i;
-
-	for (i = 0; i <= 9; i++)
-	{
-		_putchar(holbie[i]);
-	}
-	return (0);
+        printf("Holberton\n");
+        return (0);
 }
