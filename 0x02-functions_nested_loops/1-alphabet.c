@@ -6,7 +6,7 @@
 (* a blank line
  * Description: Longer description of the function)?
 (* section header: Section description)*
- * Return: 0
+ * Return: void
  */
 void print_alphabet(void)
 {
