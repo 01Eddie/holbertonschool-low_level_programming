@@ -1,19 +1,21 @@
-#include <stdio.h>
+#include "holberton.h"
 
 /**
- * main - Short description, single line
+ * print_alphabet - Short description, single line
  * @void: Description of parameter x
 (* a blank line
  * Description: Longer description of the function)?
 (* section header: Section description)*
  * Return: 0
  */
-void print_alphabet(void){
-
-}
-
-int main(void)
+void print_alphabet(void)
 {
-        printf("Holberton\n");
-        return (0);
+	char letter = 'a';
+	int x = 26;
+	do {
+		_putchar(letter);
+		letter++;
+		x--;
+	} while (x != 0);
+	_putchar('\n');
 }
