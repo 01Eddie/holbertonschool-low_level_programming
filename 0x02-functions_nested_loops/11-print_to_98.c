@@ -16,7 +16,7 @@ void print_to_98(int n)
 
 	for (count = n; count < 99; count++)
 	{
-		if(count == 98)
+		if (count == 98)
 			printf("%d", count);
 		else
 			printf("%d, ", count);
