@@ -14,10 +14,10 @@ void more_numbers(void)
 	int i;
 	int u, d, num;
 
-	for (i = 0; i < 11; i++)
+	for (i = 0; i < 10; i++)
 	{
 		for (num = 0; num < 15; num++)
-		{			
+		{
 			if (num < 10)
 			{
 				u = num;
