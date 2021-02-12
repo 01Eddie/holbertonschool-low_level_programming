@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print Fizz Buzz of numbers 3 and 5
+ * main - function main of multiples numbers of 3 or 5
  *
  * Return: 0
  */
