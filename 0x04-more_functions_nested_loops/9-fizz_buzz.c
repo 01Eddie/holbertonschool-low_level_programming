@@ -1,12 +1,8 @@
 #include <stdio.h>
 
 /**
- * main - print Fizz Buzz of numbers 3 and 5
- * @void: description of parameter a
-(* a blank line
- * description: main of numbers
-(* section header: section description)*
- * return: Always 0
+ * main - print Fizz Buzz of numbers 3 and 5.
+ * return: 0
  */
 
 int main(void)
@@ -26,4 +22,5 @@ int main(void)
 	}
 	printf("\n");
 
+	return (0);
 }
