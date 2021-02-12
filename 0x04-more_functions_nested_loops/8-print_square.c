@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * print_diagonal - short description, single line
- * @n: description of parameter a
+ * print_square - short description, single line
+ * @size: description of parameter a
 (* a blank line
  * description: longer description of the function)?
 (* section header: section description)*
@@ -12,6 +12,7 @@
 void print_square(int size)
 {
 	int fila, columna;
+
 	if (size <= 0)
 	{
 		_putchar('\n');
