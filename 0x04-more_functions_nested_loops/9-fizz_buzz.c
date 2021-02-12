@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print Fizz Buzz of numbers 3 and 5.
+ * main - print Fizz Buzz of numbers 3 and 5
  * return: 0
  */
 
