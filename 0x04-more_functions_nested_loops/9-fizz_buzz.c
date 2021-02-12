@@ -2,7 +2,8 @@
 
 /**
  * main - print Fizz Buzz of numbers 3 and 5
- * return: 0
+ *
+ * Return: 0
  */
 
 int main(void)
