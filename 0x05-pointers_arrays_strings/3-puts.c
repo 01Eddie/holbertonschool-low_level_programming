@@ -11,7 +11,13 @@
 
 void _puts(char *str)
 {
-	char nline = '\n';
+	int count = 0;
 
-	nline = *str;
+	while (*(s + count))
+	{
+		_putchar(*(s[count]));
+		count++;
+	}
+
+	_putchar('\n');
 }
