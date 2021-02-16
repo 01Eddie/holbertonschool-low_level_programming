@@ -13,8 +13,8 @@ int main(void)
 
 	a = 98;
 	b = 42;
-	rintf("a=%d, b=%d\n", a, b);
-	wap_int(&a, &b);
-	rintf("a=%d, b=%d\n", a, b);
+	printf("a=%d, b=%d\n", a, b);
+	swap_int(&a, &b);
+	printf("a=%d, b=%d\n", a, b);
 	return (0);
 }
