@@ -6,14 +6,14 @@
 (* a blank line
  * description: longer description of the function)?
 (* section header: section description)*
- * Return: count 
+ * Return: length of s
 */
 
 int _strlen(char *s)
 {
 	int count = 0;
 
-	while (*(s + count))
+	while (s[count] != '\0')
 		count++;
 
 	return (count);
