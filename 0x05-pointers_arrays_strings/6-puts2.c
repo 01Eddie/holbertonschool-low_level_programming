@@ -3,9 +3,6 @@
 /**
  * puts2 - short description, single line
  * @str: string
-(* a blank line
- * description: longer description of the function)?
-(* section header: section description)*
  * Return: void
  */
 
