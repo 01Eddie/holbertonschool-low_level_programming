@@ -2,7 +2,7 @@
 
 /**
  * puts2 - short description, single line
- * @str: string
+ * @str: pointer to string
  * Return: void
  */
 
