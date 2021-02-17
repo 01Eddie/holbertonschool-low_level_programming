@@ -7,7 +7,7 @@
 (* a blank line
  * description: longer description of the function)?
 (* section header: section description)*
- * Return: dest
+ * Return: dest + '\0'
  */
 
 char *_strcpy(char *dest, char *src)
@@ -20,5 +20,6 @@ char *_strcpy(char *dest, char *src)
 		count++;
 	}
 
-	return (dest);
+
+	return (dest + '\0');
 }
