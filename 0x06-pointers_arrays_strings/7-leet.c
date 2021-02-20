@@ -13,7 +13,7 @@ char *leet(char *s)
 	int len = 5;
 	int i = 0;
 	int j;
-		while (s[i])
+		while (s[i] = '\0')
 	{
 		for (j = 0; j < len; j++)
 		{
