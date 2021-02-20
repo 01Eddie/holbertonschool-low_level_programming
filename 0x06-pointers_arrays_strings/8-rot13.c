@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * leet - short description, single line
+ * rot13 - short description, single line
  * @s: character
  * Return: s
 */
