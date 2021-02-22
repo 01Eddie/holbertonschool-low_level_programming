@@ -2,7 +2,7 @@
 
 /**
  * print_number- short description, single line
- * @n: integer 
+ * @n: integer
  * Return: void
 */
 
