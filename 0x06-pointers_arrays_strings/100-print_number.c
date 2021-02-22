@@ -8,7 +8,8 @@
 
 void print_number(int n)
 {
-	int num, exp, digit, lDig;
+	unsigned int num;
+	int  exp, digit, lDig;
 
 	exp = 1;
 	lDig = n % 10;
