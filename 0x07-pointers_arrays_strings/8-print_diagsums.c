@@ -4,7 +4,7 @@
 /**
  * print_diagsums - function print_diagsums
  * @a: integer
- * @size integer
+ * @size: integer
  * Return: void
 */
 
