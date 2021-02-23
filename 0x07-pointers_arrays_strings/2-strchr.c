@@ -4,7 +4,7 @@
  * _strchr- short description, single line
  * @s: character
  * @c: character
- * Return: void
+ * Return: outS or '\0'
 */
 
 char *_strchr(char *s, char c)
