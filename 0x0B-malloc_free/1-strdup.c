@@ -12,16 +12,17 @@ char *_strcpy(char *dest, char *src);
 
 char *_strdup(char *str)
 {
+	/*Space for length plus null*/
 	char *dest = malloc(_strlen(str) + 1);
-
+	/*No memory*/
 	if (str == NULL)
 		return (NULL);
-
+	/*No memory*/
 	if (dest == NULL)
 		return (NULL);
-
+	/*copy of characters*/
 	_strcpy(dest, str);
-
+	/*return the news characters*/
 	return (dest);
 }
 
