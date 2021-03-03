@@ -7,7 +7,7 @@ char *_strcpy(char *dest, char *src);
 /**
  * _strdup - writes the character c to stdout
  * @str: Character
- * Return: NULL or ar
+ * Return: NULL or dest
  */
 
 char *_strdup(char *str)
