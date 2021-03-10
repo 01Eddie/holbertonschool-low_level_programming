@@ -49,8 +49,10 @@ dog_t *new_dog(char *name, float age, char *owner)
 {
 
 	struct dog *dog;
-	int lenN = 0, lenO = 0;
-	char *cname, *cowner;
+	int lenN = 0;
+	int lenO = 0;
+	char *cname;
+	char *cowner;
 
 	dog = malloc(sizeof(struct dog));
 /*Return NULL if the functions fails*/
