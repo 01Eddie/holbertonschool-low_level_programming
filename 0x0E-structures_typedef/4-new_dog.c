@@ -1,7 +1,6 @@
 #include "dog.h"
 #include <stdio.h>
 #include <stdlib.h>
-
 /*You have to store a copy of name and owner*/
 /**
  * _strlen - short description, single line
@@ -17,7 +16,6 @@ int _strlen(char *s)
 
 	return (count);
 }
-
 /**
  * _strcpy - short description, single line
  * @dest: character
@@ -37,7 +35,6 @@ char *_strcpy(char *dest, char *src)
 
 	return (dest);
 }
-
 /**
  * new_dog - structures of new_dog
  * @name: Character
@@ -47,7 +44,6 @@ char *_strcpy(char *dest, char *src)
 */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-
 	struct dog *dog;
 	int lenN = 0;
 	int lenO = 0;
@@ -62,7 +58,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 	{
 		lenN = _strlen(name);
 		cname = malloc(sizeof(char) * (lenN + 1));
-
 		if (cname == NULL)
 		{
 			free(dog);
@@ -71,7 +66,6 @@ dog_t *new_dog(char *name, float age, char *owner)
 		_strcpy(cname, name);
 		dog->name = cname;
 	}
-
 	if (owner != NULL)
 	{
 		lenO = _strlen(owner);
