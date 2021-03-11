@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 /**
  * main - check the code for Holberton School students.
  * @argc: integer
@@ -13,11 +12,6 @@
 int main(int argc, char *argv[])
 {
 	int num1, num2;
-	int (*sign)(int, int);
-
-	num1 = atoi(argv[1]);
-	num2 = atoi(argv[3]);
-
 /*if the number of arguments is wrong, print Error, followed by a new line,*/
 /*and exit with the status 98*/
 	if (argc != 4)
@@ -26,6 +20,10 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
+	int (*sign)(int, int);
+
+	num1 = atoi(argv[1]);
+	num2 = atoi(argv[3]);
 /*if the operator is none of the above, print Error, followed by a new*/
 /*line, and exit with the status 99*/
 	sign = get_op_func(argv[2]);
