@@ -12,6 +12,9 @@
 int main(int argc, char *argv[])
 {
 	int num1, num2;
+
+	int (*sign)(int, int);
+
 /*if the number of arguments is wrong, print Error, followed by a new line,*/
 /*and exit with the status 98*/
 	if (argc != 4)
@@ -19,8 +22,6 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-
-	int (*sign)(int, int);
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
