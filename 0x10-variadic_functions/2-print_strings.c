@@ -19,10 +19,12 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for(; count < n; count++)
 	{
 		valueS = va_arg(ap, char *);
-		printf("%s", valueS);
+
 
 		if (valueS == NULL)
 			printf("(nil)");
+		else
+			printf("%s", valueS);
 
 		if (separator != NULL && count < n - 1)
 			printf("%s", separator);
