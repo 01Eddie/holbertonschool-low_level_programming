@@ -1,11 +1,12 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
+
 /**
- * print_string - variadic functions
+ * print_strings - variadic functions
  * @separator: Character
  * @n: Integer
- * Return: void
+ * Return: void.
  */
 
 void print_strings(const char *separator, const unsigned int n, ...)
@@ -16,10 +17,9 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 	va_start(ap, n);
 
-	for(; count < n; count++)
+	for (; count < n; count++)
 	{
 		valueS = va_arg(ap, char *);
-
 
 		if (valueS == NULL)
 			printf("(nil)");
