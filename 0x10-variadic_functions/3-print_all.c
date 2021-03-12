@@ -1,6 +1,7 @@
 #include "variadic_functions.h"
 #include <stdarg.h>
 #include <stdio.h>
+
 /**
  * print_all- variadic functions
  * @format: constant
@@ -22,7 +23,7 @@ void print_all(const char * const format, ...)
 	const char arr[] = "cifs";
 
 	va_start(ap, format);
-	while (format[count1] != '\0')
+	while (format != NULL && format[count1] != '\0')
 	{
 		count2 = 0;
 		while (arr[count2] != '\0')
