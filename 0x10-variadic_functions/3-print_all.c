@@ -43,12 +43,16 @@ void print_all(const char * const format, ...)
 				break;
 			case 'f':
 				printf("%f", va_arg(ap, double));
+				separator = 1;
 				break;
 			case 's':
 				valueS =  va_arg(ap, char *);
 				separator = 1;
 				if (valueS == NULL)
+				{
 					printf("(nil)");
+					break;
+				}
 				printf("%s", valueS);
 				break;
 		}
