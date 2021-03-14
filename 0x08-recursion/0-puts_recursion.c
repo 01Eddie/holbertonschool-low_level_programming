@@ -2,7 +2,7 @@
 
 /**
  * _puts_recursion - writes the character c to stdout
- * @s: Character 
+ * @s: Character
  * Return: void
  */
 
