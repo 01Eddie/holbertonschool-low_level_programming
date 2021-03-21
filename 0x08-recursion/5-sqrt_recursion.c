@@ -23,8 +23,8 @@ int _sqrt_recursion(int n)
 
 int _sqrt(int val, int aux)
 {
-	if (aux*aux == val) 
-		return (aux); 
+	if (aux * aux == val)
+		return (aux);
 	else
-		return (aux*aux > val) ? (-1) : (_sqrt(val, aux + 1));
+		return ((aux * aux > val) ? (-1) : (_sqrt(val, aux + 1)));
 }
