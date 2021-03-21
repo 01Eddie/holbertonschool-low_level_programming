@@ -5,17 +5,14 @@
  * @s: Character pointer
  * Return: palindrome(s, 0, convert)
  */
-
 int is_palindrome(char *s)
 {
 	int convert;
 
-	convert = _strlen(s) - 1;
+	convert = _strlen_recursion(s) - 1;
 
 	return (palindrome(s, 0, convert));
 }
-
-
 /**
  * palindrome - functions recursive
  * @c: Character pointer
@@ -23,33 +20,19 @@ int is_palindrome(char *s)
  * @f: Integer
  * Return: 1, palindrome(c, i+1, f+1) or 0
 */
-
 int palindrome(char *c, int i, int f)
 {
 	if (i >= f)
 		return (1);
 
-	if (c[i] == c[f])
-		return (palindrome(c, i + 1, f - 1));
-	else
-		return (0);
+	return ((c[i] == c[f]) ? (palindrome(c, i + 1, f - 1)) : (0));
 }
-
 /**
- * _strlen - short description, single line
+ * _strlen_recursion - short description, single line
  * @s: description of parameter s
-(* a blank line
- * description: longer description of the function)?
-(* section header: section description)*
  * Return: length of s
 */
-
-int _strlen(char *s)
+int _strlen_recursion(char *s)
 {
-	int count = 0;
-
-	while (s[count] != '\0')
-		count++;
-
-	return (count);
+	return ((*s != '\0') ? (_strlen_recursion(s + 1) + 1) : (0));
 }
