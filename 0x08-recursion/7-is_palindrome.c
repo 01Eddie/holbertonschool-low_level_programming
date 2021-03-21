@@ -29,7 +29,10 @@ int palindrome(char *c, int i, int f)
 	if (i >= f)
 		return (1);
 
-	return ((c[i] == c[f]) ? (palindrome(c, i + 1, f - 1)) : (0));
+	if (c[i] == c[f])
+		return (palindrome(c, i + 1, f - 1));
+	else
+		return (0);
 }
 
 /**
