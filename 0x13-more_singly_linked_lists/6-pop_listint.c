@@ -14,10 +14,10 @@ int pop_listint(listint_t **head)
 		return (0);
 
 	node = *head;
-/*Pull out data before the node is deleted*/
-	int result = node->n;
 /*unlink the head node for the caller*/
 	*head = node->next;
+/*Pull out data before the node is deleted*/
+	int result = node->n;
 /* Note the `*` — uses a reference-pointer*/
 /*just like `push()` and `deleteList()`.*/
 
