@@ -11,11 +11,16 @@
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
 	unsigned int count = 0;
+	/*create our node*/
 	listint_t *currentNode;
 
-	/*create our node*/
-	currentNode = malloc(sizeof(*currentNode));
+	if (*head == NULL && idx != 0)
+		return (NULL);
 	/*Check for success of malloc() here! */
+	currentNode = malloc(sizeof(*currentNode));
+
+	if (currentNode == NULL)
+		return (0);
 
 	/*Assign data(n)*/
 	currentNode->n = n;
