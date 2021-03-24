@@ -10,11 +10,11 @@ int pop_listint(listint_t **head)
 {
 	listint_t *node;
 	/*underflow condition*/
-	if (*head == NULL)
+	if (head == NULL || *head == NULL)
 		return (0);
 
 	node = *head;
-	/*Pull out data before the node is deleted*/
+/*Pull out data before the node is deleted*/
 	int result = node->n;
 /*unlink the head node for the caller*/
 	*head = node->next;
@@ -23,6 +23,6 @@ int pop_listint(listint_t **head)
 
 /*free the head node*/
 	free(node);
-	/*don't forget to return the data*/
+/*don't forget to return the data*/
 	return (result);
 }
