@@ -10,9 +10,8 @@ void free_listint2(listint_t **head)
 	listint_t *actual_nodeInt;
 	listint_t *nodeInt;
 
-	if (head == NULL)
-		return;
-
+/*The function sets the head to NULL*/
+	*head = NULL;
 	actual_nodeInt = *head;
 
 	while (actual_nodeInt != NULL)
@@ -21,5 +20,4 @@ void free_listint2(listint_t **head)
 		free(actual_nodeInt);
 		actual_nodeInt = nodeInt;
 	}
-	actual_nodeInt = NULL;
 }
