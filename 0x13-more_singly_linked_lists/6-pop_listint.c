@@ -9,6 +9,7 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *node;
+	int result;
 	/*underflow condition*/
 	if (head == NULL || *head == NULL)
 		return (0);
@@ -17,7 +18,7 @@ int pop_listint(listint_t **head)
 /*unlink the head node for the caller*/
 	*head = node->next;
 /*Pull out data before the node is deleted*/
-	int result = node->n;
+	result = node->n;
 /* Note the `*` — uses a reference-pointer*/
 /*just like `push()` and `deleteList()`.*/
 
