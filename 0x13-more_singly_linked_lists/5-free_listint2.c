@@ -9,9 +9,12 @@ void free_listint2(listint_t **head)
 {
 	listint_t *actual_nodeInt;
 	listint_t *nodeInt;
-
-/*The function sets the head to NULL*/
+/* The function sets the head to NULL */
+	if (head == NULL)
+		return;
+	
 	*head = NULL;
+
 	actual_nodeInt = *head;
 
 	while (actual_nodeInt != NULL)
