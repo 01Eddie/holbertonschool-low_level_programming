@@ -20,13 +20,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		return (0);
 
 	buff = malloc(sizeof(char) * letters);
-	wr =	read(fd, buff, letters);
-
-	if (wr == -1)
-	{
-		return (0);
-		exit(1);
-	}
+	wr = read(fd, buff, letters);
 
 	for (; countLetter <= letters && buff[countLetter] != '\0'; countLetter++)
 	{
