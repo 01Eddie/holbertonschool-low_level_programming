@@ -30,7 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	for (; countLetter <= letters && buff[countLetter] != '\0'; countLetter++)
 	{
-		wr = putchar(buff[countLetter]);
+		wr = _putchar(buff[countLetter]);
 
 		if (wr == -1)
 		{
