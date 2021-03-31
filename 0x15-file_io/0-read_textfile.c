@@ -22,9 +22,10 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	buff = malloc(sizeof(char) * letters);
 	wr = read(fd, buff, letters);
 
-	for (; countLetter <= letters && buff[countLetter] != '\0'; countLetter++)
+	while (countLetter <= letters && buff[countLetter] != '\0')
 	{
 		wr = _putchar(buff[countLetter]);
+		countLetter++;
 
 		if (wr == -1)
 		{
