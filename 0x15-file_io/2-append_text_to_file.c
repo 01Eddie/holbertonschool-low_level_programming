@@ -24,14 +24,18 @@ int append_text_to_file(const char *filename, char *text_content)
 	if (text_content != NULL)
 	{
 		while (text_content[count] != '\0')
-		{
-			write(fd, text_content, count);
 			count++;
-		}
 	}
 	else
 		text_content = "";
 
+	write(fd, text_content, count);
+
+	if (write(fd, text_content, count) == -1)
+	{
+		return (-1);
+		exit(1);
+	}
 
 	close(fd);
 	return (1);
