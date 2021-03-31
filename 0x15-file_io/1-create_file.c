@@ -8,6 +8,7 @@
 int create_file(const char *filename, char *text_content)
 {
 	int fd, wr; /*wr: value of write*/
+	int count; /*count: counts of bytes*/
 
 	if (filename == NULL)
 		return (-1);
@@ -23,16 +24,18 @@ int create_file(const char *filename, char *text_content)
 	if (text_content == NULL)
 		text_content = "";
 
-	while (*text_content != '\0')
+	else
 	{
-		wr = write(fd, text_content, 1);
-		text_content++;
+		while (text_content[count] != '\0')
+			count++;
+	}
 
-		if (wr == -1)
-		{
-			return (-1);
-			exit(1);
-		}
+	wr = write(fd, text_content, count);
+
+	if (wr == -1)
+	{
+		return (-1);
+		exit(1);
 	}
 
 	close(fd);
