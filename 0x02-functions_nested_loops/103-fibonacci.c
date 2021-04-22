@@ -16,7 +16,7 @@ int main(void)
 		a = b;
 		b = c;
 
-		if (b % 2 == 0)
+		if (b % 2 == 0 && b <= 4000000)
 			sum = sum + b;
 	}
 
