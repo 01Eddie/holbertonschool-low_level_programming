@@ -7,8 +7,7 @@
  */
 int main(void)
 {
-	unsigned int count;
-	unsigned long int a = 1, b = 0, c, sum;
+	unsigned long int count, a = 1, b = 0, c, sum = 0;
 
 	for (count = 0; count <= 4000000; count++)
 	{
