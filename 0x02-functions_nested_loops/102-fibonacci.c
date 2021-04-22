@@ -7,9 +7,10 @@
  */
 int main(void)
 {
-	int count, a = 0, b = 1, c;
+	unsigned int count;
+	unsigned long int a = 0, b = 1, c;
 
-	printf("%d, ", b);
+	printf("%lu, ", b);
 
 	for (count = 0; count <= 48; count++)
 	{
@@ -17,10 +18,10 @@ int main(void)
 		a = b;
 		b = c;
 
-		printf("%d, ", c);
+		printf("%lu, ", c);
 
 		if (count == 48)
-			printf("%d\n", c);
+			printf("%lu\n", c);
 	}
 	return (0);
 }
