@@ -8,11 +8,12 @@
 int main(void)
 {
 	unsigned int count;
-	unsigned long int a = 1, b = 1, c;
+	unsigned long int a = 1, b = 2, c = 3;
 
+	printf("%lu, ", a);
 	printf("%lu, ", b);
 
-	for (count = 0; count <= 48; count++)
+	for (count = 3; count < 50; count++)
 	{
 		c = a + b;
 		a = b;
@@ -20,7 +21,7 @@ int main(void)
 
 		printf("%lu, ", c);
 
-		if (count == 48)
+		if (count == 49)
 			printf("%lu\n", c);
 	}
 	return (0);
