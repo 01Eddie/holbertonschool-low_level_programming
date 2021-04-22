@@ -15,10 +15,10 @@ int main(void)
 		a = b;
 		b = c;
 
-		printf("%i, ", c);
+		printf("%d, ", c);
 
 		if (count == 48)
-			printf("%i \n", c);
+			printf("%d\n", c);
 	}
 	return (0);
 }
