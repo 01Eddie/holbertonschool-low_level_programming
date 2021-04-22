@@ -9,6 +9,8 @@ int main(void)
 {
 	int count, a = 0, b = 1, c;
 
+	printf("%d, ", b);
+
 	for (count = 0; count <= 48; count++)
 	{
 		c = a + b;
