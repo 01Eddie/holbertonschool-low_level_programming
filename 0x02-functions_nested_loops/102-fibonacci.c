@@ -11,7 +11,6 @@ int main(void)
 	unsigned long int a = 1, b = 1, c;
 
 	printf("%lu, ", a);
-//	printf("%ld, ", b);
 
 	for (count = 0; count <= 48; count++)
 	{
@@ -20,9 +19,9 @@ int main(void)
 		b = c;
 
 		if (count != 48)
-			printf("%lu, ", c);
+			printf("%lu, ", b);
 		else
-			printf("%lu\n", c);
+			printf("%lu\n", b);
 	}
 	return (0);
 }
