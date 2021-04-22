@@ -8,7 +8,7 @@
 int main(void)
 {
 	unsigned int count;
-	unsigned long int a = 0, b = 1, c;
+	unsigned long int a = 1, b = 1, c;
 
 	printf("%lu, ", b);
 
