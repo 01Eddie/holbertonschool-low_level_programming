@@ -20,6 +20,6 @@ int main(void)
 			sum = sum + b;
 	}
 
-	printf("Suma: %lu\n", sum);
+	printf("%lu\n", sum);
 	return (0);
 }
