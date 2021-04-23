@@ -8,7 +8,9 @@
 int main(void)
 {
 	unsigned int count;
-	unsigned long int a = 1, b = 1, c;
+	unsigned long int a = 1;
+	unsigned long int b = 1;
+	unsigned long int c;
 
 	printf("%lu, ", a);
 
@@ -22,7 +24,6 @@ int main(void)
 			printf("%lu, ", b);
 		else
 			printf("%lu\n", b);
-
 	}
 	return (0);
 }
