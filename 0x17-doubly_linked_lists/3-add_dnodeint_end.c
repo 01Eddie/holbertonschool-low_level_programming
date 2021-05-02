@@ -18,16 +18,18 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 	if ((*head) == NULL)
 	{
 		new_node->prev = NULL;
+        new_node->n = n;
+	    new_node->next = NULL;
 		*head = new_node;
 		return (new_node);
 	}
-	new_node->n = n;
-	new_node->next = NULL;
 
 	while (last->next != NULL)
 		last = last->next;
 
-	last->next = new_node;
+	last->next = NULL;
 	new_node->prev = last;
+    new_node->n = n;
+	last->next = new_node;
 	return (new_node);
 }
