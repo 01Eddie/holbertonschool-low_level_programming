@@ -10,19 +10,19 @@
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
 	unsigned int i = 0;
-	dlistint_t *last = head;
+	dlistint_t *get_node = head;
 
 	if (head == NULL)
 		return (NULL);
 
-	while (last != NULL)
+	while (get_node != NULL)
 	{
 		if (i == index)
-			return (last);
+			return (get_node);
 		i++;
-		last = last->next;
+		get_node = get_node->next;
 	}
 	printf("%d", head->n);
 
-	return (last);
+	return (get_node);
 }
