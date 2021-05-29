@@ -20,7 +20,7 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	new_node = ht->array[index];
 	while (new_node != NULL)
 	{
-		if (strcmp(new_node->key, key) == 1)
+		if (strcmp(new_node->key, key) == 0)
 		{
 			free(new_node->value);
 			new_node->value = strdup(value);
