@@ -21,9 +21,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	hash_node_t *node = NULL, *oldhead, *tmp;
 	unsigned long int hash_index;
 
-	if (ht == NULL || key == NULL || value == NULL)
+	if (key == NULL || value == NULL)
 		return (0);
 	if (strlen(key) < 1)
+		return (0);
+	if (ht == NULL)
 		return (0);
 	node = malloc(sizeof(hash_node_t));
 	if(node == NULL)
