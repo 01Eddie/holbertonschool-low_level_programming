@@ -1,0 +1,3 @@
+all: main.o holberton.o
+		gcc -o holberton main.o holberton.o 
+
