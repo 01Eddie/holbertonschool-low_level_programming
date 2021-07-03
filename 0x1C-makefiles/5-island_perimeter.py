@@ -16,10 +16,6 @@ def island_perimeter(grid):
         c = 0
 
         for val in line:
-            R = len(grid[0])
-            C = len(grid)
-            count = 0
-
             if val == 1:
                 surround = 4
                 if c != length - 1:
