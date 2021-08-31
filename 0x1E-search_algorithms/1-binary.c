@@ -50,9 +50,9 @@ int binary_search(int *array, size_t size, int value)
 	if (!array)
 		return (-1);
 
-	print_array(array + l, r + 1 - l);
 	while (l < r)
 	{
+		print_array(array + l, r + 1 - l);
 		m = (l + r) / 2;
 		if (array[m] < value)
 			l = m + 1;
@@ -60,7 +60,6 @@ int binary_search(int *array, size_t size, int value)
 			r = m - 1;
 		else
 			return (m);
-		print_array(array + l, r + 1 - l);
 	}
 	return (-1);
 }
