@@ -1,24 +1,24 @@
 #include "search_algos.h"
+void print_array(int *a, size_t low, size_t high);
+
 /**
  * print_array - Function
  * @a: Pointer of Integer
- * @n : Size_t
+ * @low: Size_t
+ * @high: Size_t
  * Return: Void
  */
-void print_array(int *a, size_t n)
+void print_array(int *a, size_t low, size_t high)
 {
 	size_t i;
 
 	printf("Searching in array: ");
-	for (i = 0; i < n; i++)
+	for (i = low; i < high; i++)
 	{
-		printf("%d", a[i]);
-
-		if (i < n - 1)
-			printf(", ");
+		printf("%d, ", a[i]);
 	}
 
-	printf("\n");
+	printf("%d\n", a[i]);
 }
 
 /**
@@ -30,37 +30,24 @@ void print_array(int *a, size_t n)
  */
 int binary_search(int *array, size_t size, int value)
 {
-	/**
-	* function binary_search(A, n, T) is
-	* L := 0
-	* R := n − 1
-	* while L ≤ R do
-	* m := floor((L + R) / 2)
-		* if A[m] < T then
-			* L := m + 1
-		* else if A[m] > T then
-			* R := m − 1
-		* else:
-			* return m
-		* return unsuccesful
-	 */
-	size_t l = 0, m;
-	size_t r = size - 1;
+	size_t left = 0;
+	size_t right = size - 1;
+	size_t middle = (size - 1) / 2;
 
-	print_array(array + l, r + 1 - l);
-	if (!array)
+	if (!array || size == 0)
 		return (-1);
 
-	while (l < r)
+	while (left < right)
 	{
-		m = (l + r) / 2;
-		if (array[m] < value)
-			l = m + 1;
-		else if (array[m] > value)
-			r = m - 1;
+		print_array(array, left, right);
+		middle = (left + right) / 2;
+		if (value < array[middle])
+			right = middle - 1;
+		else if (value > array[middle])
+			left = middle + 1;
 		else
-			return (m);
-		print_array(array + l, r + 1 - l);
+			return (middle);
+		/* print_array(array + left, right + 1 - left); */
 	}
 	return (-1);
 }
