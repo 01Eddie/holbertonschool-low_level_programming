@@ -1,4 +1,5 @@
 #include <stdio.h>
+#define LARGEST 10000000000
 
 /**
  * main - Short description, single line
@@ -7,43 +8,31 @@
  */
 int main(void)
 {
-	unsigned long int count, count1;
-	unsigned long int a = 1;
-	unsigned long int b = 2;
-	unsigned long int c;
+	unsigned long int fr1 = 0, bk1 = 1, fr2 = 0, bk2 = 2;
+	unsigned long int hold1, hold2, hold3;
+	int count;
 
-	c = a + b;
-
-	printf("%lu, ", a);
-	printf("%lu, ", b);
-
-	for (count = 3; count < 89; count++)
+	printf("%lu, %lu, ", bk1, bk2);
+	for (count = 2; count < 98; count++)
 	{
-		printf("%lu, ", c);
-		a = b;
-		b = c;
-		c = a + b;
+		if (bk1 + bk2 > LARGEST || fr2 > 0 || fr1 > 0)
+		{
+			hold1 = (bk1 + bk2) / LARGEST;
+			hold2 = (bk1 + bk2) % LARGEST;
+			hold3 = fr1 + fr2 + hold1;
+			fr1 = fr2, fr2 = hold3;
+			bk1 = bk2, bk2 = hold2;
+			printf("%lu%010lu", fr2, bk2);
+		}
+		else
+		{
+			hold2 = bk1 + bk2;
+			bk1 = bk2, bk2 = hold2;
+			printf("%lu", bk2);
+		}
+		if (count != 97)
+			printf(", ");
 	}
-
-	unsigned long int a1, a2, b1, b2, c1, c2;
-
-	b1 = b / 1000000000;
-	b2 = b % 1000000000;
-	c1 = b / 1000000000;
-	c2 = b % 1000000000;
-
-	for (count1 = 89; count1 < 98; count1++)
-	{
-		printf("%lu%lu, ", c1, c2);
-		a1 = b1;
-		a2 = b2;
-		b1 = c1;
-		b2 = c2;
-		c1 = a1 + b1 + ((a2 + b2) / 1000000000);
-		c2 = (a2 + b2) % 1000000000;
-	}
-
-	printf("%lu%lu\n", c1, c2);
-
+	printf("\n");
 	return (0);
 }
