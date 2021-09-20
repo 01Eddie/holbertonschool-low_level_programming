@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	unsigned int count, count1;
+	unsigned long int count, count1;
 	unsigned long int a = 1;
 	unsigned long int b = 2;
 	unsigned long int c;
@@ -17,7 +17,7 @@ int main(void)
 	printf("%lu, ", a);
 	printf("%lu, ", b);
 
-	for (count = 3; count <= 89; count++)
+	for (count = 3; count < 89; count++)
 	{
 		printf("%lu, ", c);
 		a = b;
@@ -25,7 +25,7 @@ int main(void)
 		c = a + b;
 	}
 
-	int a1, a2, b1, b2, c1, c2;
+	unsigned long int a1, a2, b1, b2, c1, c2;
 
 	b1 = b / 1000000000;
 	b2 = b % 1000000000;
