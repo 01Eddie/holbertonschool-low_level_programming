@@ -8,9 +8,11 @@
 (* section header: Section description)*
  * Return: val
  */
+
 int print_last_digit(int num)
 {
 	int val;
+
 	val = num % 10;
 
 	if (num < 0)
