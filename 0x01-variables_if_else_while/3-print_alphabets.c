@@ -1,6 +1,3 @@
-#include <stdlib.h>
-#include <time.h>
-/* more headers goes there */
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
@@ -13,23 +10,14 @@
  */
 int main(void)
 {
-	int n = 9;
-	int nC = 6;
-	char letter = 'a';
-	char letterC = 'A';
+	int n;
+	int nC;
 
 	/* your code goes there */
-	do {
-	putchar(letter);
-	letter++;
-	n++;
-	} while (n != 0);
-
-	do {
-	putchar(letterC);
-	letterC++;
-	nC--;
-	} while (nC != 0);
+	for (n = 'a'; n <= 'z'; n++)
+		putchar(n);
+	for (nC = 'A'; nC <= 'Z'; nC++)
+		putchar(nC);
 
 	putchar('\n');
 	return (0);
